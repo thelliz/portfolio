@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 60px; /* 더 크게 조정 */
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 30px; /* 더 크게 조정 */
+    font-weight: lighter;
+    color: #282828;
+    border-bottom: 2px solid #ebebeb;
+    padding-bottom: 10px;
+    margin-bottom: 25px; /* 더 크게 조정 */
+}
+
+.name-text {
+    font-size: 24px; /* 더 크게 조정 */
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+.mainbox {
+    border: 1px solid #ebebeb;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 50px; /* 더 크게 조정 */
+    box-shadow: 0 1px 25px 0 rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #919191;
+    font-size: 16px; /* 더 크게 조정 */
+    padding: 30px; /* 더 크게 조정 */
+}
+
+section {
+    margin-bottom: 35px; /* 더 크게 조정 */
+}
+
+.about-me-text {
+    font-size: 16px; /* 더 크게 조정 */
+    line-height: 24px; /* 더 크게 조정 */
+}
+
+.desc-text {
+    font-size: 16px; /* 더 크게 조정 */
+    line-height: 24px; /* 더 크게 조정 */
+}
+
+.desc-subtext {
+    font-size: 16px; /* 더 크게 조정 */
+    line-height: 24px; /* 더 크게 조정 */
+    padding-left: 16px;
+
+}
+
+.title-text, .year-text {
+    font-size: 16px; /* 더 크게 조정 */
+    font-weight: bold;
+    color: #282828;
+}
+
+.flat-wrab {
+    overflow: hidden;
+}
+
+.title-box {
+    text-align: right;
+}
+.youtube-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 이 부분이 비디오 컨테이너의 높이를 결정합니다. 필요에 따라 조절할 수 있습니다. */
+    height: 0;
+    margin-bottom: -90px; /* 하단 간격을 줄이려면 이 값을 줄이세요. 예: 10px, 5px, 또는 0px */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 0px; 
+}
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    .youtube-container {
+        margin-bottom: 0px !important;
+        width: 150%;
+        padding-bottom: 56.25%; 
+    }
+    .mainbox {
+        width: 95%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .name-text {
+        font-size: 20px;
+    }
+
+    .about-me-text {
+        font-size: 18px;
+    }
+
+    .desc-text {
+        font-size: 18px;
+    }
+    .desc-subtext {
+        font-size: 18px;
+        padding-left: 12px;
+    }
+    .title-text, .year-text {
+        font-size: 18px;
+    }
+}
